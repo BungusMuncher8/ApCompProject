@@ -3,7 +3,7 @@
 private class Main 
 
 {
-  static Player player; 
+  static Player player = new Player(); 
 
 
 static void EntryWelcome()
@@ -15,6 +15,7 @@ string name = Console.ReadLine();
   static void Main(string[] args)
     {
            // player1.SpecailMove("YIPPEE");
+    
         Console.WriteLine("Welcome Bug Game");
         EntryWelcome();
 
