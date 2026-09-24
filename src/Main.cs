@@ -17,7 +17,7 @@ string name = Console.ReadLine();
     {
            // player1.SpecailMove("YIPPEE");
     
-        Console.WriteLine("Welcome Bug Game");
+        Console.WriteLine("Welcome to Bug Game");
         EntryWelcome();
 
     }
