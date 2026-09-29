@@ -1,23 +1,20 @@
 ﻿// paul tokhtuev | queue example
 using System.Collections.Generic;
-private class Program
+ class Program
 {
-    static Queue<string> playerInput = new Queue<string>;
-    static Queue<string> secondPlayerInput;
+    static Queue<string> playerInput = new Queue<string>();
+   
 
-private Program()
-{
-    secondPlayerInput = playerInput;
-}
+static int turnNumber = 1;
 
-    private Main(string[] args)
+    static void Main(string[] args)
     {
         Console.WriteLine("Input amount of actions");
         
         GetInput();
     }
 
-    static GetInput() 
+    static void GetInput() 
     {
         int amount = 0;
         if(Int32.TryParse(Console.ReadLine(), out amount ))
@@ -28,12 +25,13 @@ private Program()
         }
         
     }
-    static SetInput(int amount)
+    static  void SetInput(int amount)
     {
         try
         {
         for(int i = 0; i < amount; i++)
         {
+            Console.WriteLine("action "+ (i+1));
             playerInput.Enqueue(Console.ReadLine());
         }
         } catch
@@ -42,19 +40,15 @@ private Program()
         }
         DisplayQueue();
     }
-    static DisplayQueue()
+    static  void DisplayQueue()
     {
         if(playerInput.Count > 0)
         {
 
-            Console.WriteLine("All jobs: ");
+          
 
-         for(int i = 0; i< playerInput.Count; i++)
-            {
-             Console.WriteLine(playerInput[i]);
-             }
+            Console.WriteLine("Current Input " +turnNumber+ " : " + playerInput.Peek());
 
-            Console.WriteLine("Current Job: " + playerInput.Peek())
              ResolveQueue();
         }
         else
@@ -62,9 +56,10 @@ private Program()
             return;
         }
     }
-    static ResolveQueue()
+    static  void ResolveQueue()
     {
         playerInput.Dequeue();
+        turnNumber++;
         DisplayQueue();
     }
 }
