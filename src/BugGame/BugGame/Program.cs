@@ -69,3 +69,6 @@ private Program()
     }
 }
 // first in first out works for this program because we want the first input the player does to be the first inpute resolved. 
+// If a second variable named secondPlayerInput was created and set equal to playerInput in this manner: Queue<string> secondPlayerInput = playerInput, it
+// would make any changes to the either queue show up in both queues. They would be identicle. To prevent this from happening secondPlayerInput would need
+// be a copy of playerInput. This can be done in the manner of: Queue<string> secondPlayerInput = new Queue<string>(playerInput);
