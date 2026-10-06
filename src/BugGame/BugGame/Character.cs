@@ -30,6 +30,10 @@ public class Character
     {
 
     }
+    public void PathFind(Character target)
+    {
+
+    }
     public virtual void SpecialMove() 
     {
 
