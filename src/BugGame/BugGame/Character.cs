@@ -1,4 +1,4 @@
-public class Character
+public abstract class Character
 {
     private char symbol; 
     private float exp;
@@ -34,9 +34,7 @@ public class Character
     {
 
     }
-    public virtual void SpecialMove() 
-    {
-
-    }
+    public abstract void SpecialMove() ;
+    
 
 }

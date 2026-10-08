@@ -3,7 +3,8 @@ using System.Collections.Generic;
  class Program
 {
     static Queue<string> playerInput = new Queue<string>();
-   
+    static Character player; 
+    static List <Character> enemies = new List<Character>();
 
 static int turnNumber = 1;
 
