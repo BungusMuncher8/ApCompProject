@@ -5,11 +5,12 @@ using System.Collections.Generic;
     static Queue<string> playerInput = new Queue<string>();
     static Character player; 
     static List <Character> enemies = new List<Character>();
+    static int turnNumber = 1;
 
-static int turnNumber = 1;
-
+    
     static void Main(string[] args)
     {
+        enemies.Add(new Coleptera);
         Console.WriteLine("Input amount of actions");
         
         GetInput();
