@@ -19,7 +19,7 @@ public abstract class Character
     }
     public int[] DisplayPosition()
     {
-        int[] array = new int[x,y];
+        int[] array =[x,y];
         return array;
     }
     public void Move(char direction)
@@ -34,7 +34,7 @@ public abstract class Character
     {
 
     }
-    public abstract void SpecialMove() ;
+    public abstract void SpecailMove() ;
     
 
 }

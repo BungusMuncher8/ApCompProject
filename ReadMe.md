@@ -1,3 +1,4 @@
 # Current Progress
-* Currently doesn't work as I can't create c# project on mac without .Net
-* Current mock code has a player that you can set the name of. This outlines how the game will likely start. 
+* Has a queue that stores strings.
+* Need to figure out how to either queue a method or how to resolve the strings into methods
+* Character is an abstract class that gives the specialized classes of bugs an abstract specail move.

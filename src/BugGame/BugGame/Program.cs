@@ -1,4 +1,4 @@
-﻿// paul tokhtuev | queue example
+// paul tokhtuev | queue example
 using System.Collections.Generic;
 using System.IO
  class Program
@@ -6,11 +6,18 @@ using System.IO
     static Queue<string> playerInput = new Queue<string>();
     static Character player; 
     static List <Character> enemies = new List<Character>();
+    static int turnNumber = 1;
 
-static int turnNumber = 1;
-
+    
     static void Main(string[] args)
     {
+        enemies.Add(new Coleoptera());
+        enemies.Add(new Diptera());
+        enemies.Add(new Gastropod());
+        for(int i = 0; i < enemies.Count; i++)
+        {
+            enemies[i].SpecailMove();
+        }
         Console.WriteLine("Input amount of actions");
         
         GetInput();
