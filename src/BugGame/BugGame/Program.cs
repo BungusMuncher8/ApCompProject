@@ -1,5 +1,6 @@
 ﻿// paul tokhtuev | queue example
 using System.Collections.Generic;
+using System.IO
  class Program
 {
     static Queue<string> playerInput = new Queue<string>();
