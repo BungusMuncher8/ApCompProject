@@ -1,4 +1,4 @@
-﻿// paul tokhtuev | queue example
+// paul tokhtuev | queue example
 using System.Collections.Generic;
  class Program
 {
@@ -10,7 +10,13 @@ using System.Collections.Generic;
     
     static void Main(string[] args)
     {
-        enemies.Add(new Coleptera);
+        enemies.Add(new Coleoptera());
+        enemies.Add(new Diptera());
+        enemies.Add(new Gastropod());
+        for(int i = 0; i < enemies.Count; i++)
+        {
+            enemies[i].SpecailMove();
+        }
         Console.WriteLine("Input amount of actions");
         
         GetInput();
