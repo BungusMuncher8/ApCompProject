@@ -22,7 +22,7 @@ using System.Diagnostics;
             enemies[i].SpecailMove();
         }
         Console.WriteLine("Input amount of actions");
-        ProcessStartInfo(path);
+        Process.Start(path);
         GetInput();
     }
 

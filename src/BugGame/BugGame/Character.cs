@@ -26,10 +26,10 @@ public abstract class Character
     {
 
     }
-    public bool CheckLevel() 
-    {
+    // public bool CheckLevel() 
+    // {
 
-    }
+    // }
     public void PathFind(Character target)
     {
 
