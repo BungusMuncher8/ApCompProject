@@ -1,11 +1,14 @@
-// paul tokhtuev | queue example
+﻿// paul tokhtuev | queue example
 using System.Collections.Generic;
-using System.IO
+using System.IO;
+using System.Diagnostics;
+
  class Program
 {
     static Queue<string> playerInput = new Queue<string>();
     static Character player; 
     static List <Character> enemies = new List<Character>();
+    static string path = "/Users/9652749/ApCompProject/src/BugGame/BugGame/DisplayTextFile.txt";
     static int turnNumber = 1;
 
     
@@ -19,7 +22,7 @@ using System.IO
             enemies[i].SpecailMove();
         }
         Console.WriteLine("Input amount of actions");
-        
+        ProcessStartInfo(path);
         GetInput();
     }
 
